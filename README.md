@@ -30,6 +30,11 @@ This was one of my first hands-on projects in networking, and it helped me build
   - Handles two I/O streams: keyboard input and incoming server messages.
   - Simple command parsing (`/msg <user> <text>`) for private messaging.
 
+- **Other clients do the same with a different name. Example commands:**
+  -Broadcast: Hello everyone!
+  -Private message: /msg bob Hey Bob, are you there?
+  -List users: /list
+  -Quit: /quit
 ---
 
 ## How to Build
@@ -39,3 +44,8 @@ gcc -o server server.c -Wall
 
 # Compile client
 gcc -o client client.c -Wall
+
+## Interaction Interface
+![1](./images/Screenshot%20(240).png)
+![2](./images/Screenshot%20(241).png)
+![3](./images/Screenshot%20(242).png)
