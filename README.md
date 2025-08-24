@@ -38,8 +38,12 @@ This was one of my first hands-on projects in networking, and it helped me build
 ---
 
 ## Interaction Interface
+
+# Set name and broadcast messages
 ![1](./images/Screenshot%20(240).png)
+# Send private messages
 ![2](./images/Screenshot%20(241).png)
+# List users and graceful disconnection
 ![3](./images/Screenshot%20(242).png)
 
 ## How to Build
