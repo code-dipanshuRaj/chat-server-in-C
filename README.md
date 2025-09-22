@@ -4,7 +4,7 @@
 A simple yet powerful **multi-client chat system** implemented in C using **POSIX sockets**.  
 The project demonstrates core concepts of **network programming**, including connection handling, concurrency, and message broadcasting.  
 
-This was one of my first hands-on projects in networking, and it helped me build a deeper understanding of **TCP communication, multiplexing with `select()`, and socket lifecycle management**.
+This was one of my first hands-on projects in networking, and it helped me build a deeper understanding of **TCP communication, multiplexing with `epoll`, and socket lifecycle management**.
 
 ---
 
@@ -21,7 +21,7 @@ This was one of my first hands-on projects in networking, and it helped me build
 ## Architecture
 - **Server**
   - Uses `socket()`, `bind()`, `listen()`, and `accept()` for connection setup.
-  - Manages multiple connections concurrently using `select()` (I/O multiplexing).
+  - Manages multiple connections concurrently using `epoll` (I/O multiplexing).
   - Maintains a table of active clients (socket descriptors + usernames).
   - Routes messages (broadcast or private) to intended recipients.
 
